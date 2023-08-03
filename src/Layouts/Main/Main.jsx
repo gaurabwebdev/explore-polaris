@@ -64,7 +64,7 @@ const Main = () => {
               {openSideBar && <p className=""> Dashboard</p>}
             </div>
           </Link>
-          <Link to={"/"}>
+          <Link to={"/new-size-chart"}>
             <div className=" flex items-center gap-2 hover:bg-gray-300 p-2 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

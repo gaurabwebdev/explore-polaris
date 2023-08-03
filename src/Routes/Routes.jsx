@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main/Main";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import StartPage from "../Pages/StartPage/StartPage";
+import NewChartPage from "../Pages/NewChartPage/NewChartPage";
 
 const Routes = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const Routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/new-size-chart",
+        element: <NewChartPage />,
       },
     ],
   },
