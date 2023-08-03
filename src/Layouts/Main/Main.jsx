@@ -206,7 +206,7 @@ const Main = () => {
           </Link>
         </div>
       </div>
-      <div className="fixed top-0 left-16">
+      <div className="pl-12">
         <Outlet />
       </div>
     </div>
