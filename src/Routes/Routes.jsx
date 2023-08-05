@@ -7,6 +7,7 @@ import NewChartPage from "../Pages/NewChartPage/NewChartPage";
 import SettingsPage from "../Pages/SettingsPage/SettingsPage";
 import PlanPage from "../Pages/PlanPage/PlanPage";
 import HelpPage from "../Pages/HelpPage/HelpPage";
+import RatingPage from "../Pages/RatingPage/RatingPage";
 
 const Routes = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const Routes = createBrowserRouter([
       {
         path: "/help",
         element: <HelpPage />,
+      },
+      {
+        path: "/rating",
+        element: <RatingPage />,
       },
     ],
   },

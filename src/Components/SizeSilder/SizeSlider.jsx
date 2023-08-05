@@ -120,7 +120,7 @@ const SizeSlider = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="px-20 py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center bg-gray-200">
+            <div className="px-10 md:px-20 py-5 md:py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center bg-gray-200">
               <div className="bg-white border border-gray-900 px-8 py-10 rounded flex flex-col items-center">
                 <img
                   src="/public/size-slider-img/men/023-polo.a8898ee5.svg"

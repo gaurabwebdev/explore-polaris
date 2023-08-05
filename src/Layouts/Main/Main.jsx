@@ -149,7 +149,7 @@ const Main = () => {
               {openSideBar && <p className=""> Help</p>}
             </div>
           </Link>
-          <Link to={"/"}>
+          <Link to={"/rating"}>
             <div className=" flex items-center gap-2 hover:bg-gray-300 p-2 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
