@@ -1,5 +1,6 @@
 import React from "react";
 import SizeSlider from "../../Components/SizeSilder/SizeSlider";
+import { Link } from "react-router-dom";
 
 const NewChartPage = () => {
   return (
@@ -16,6 +17,12 @@ const NewChartPage = () => {
         </div>
       </div>
       <SizeSlider />
+
+      <div className="mt-16 text-center text-gray-400">
+        <Link>
+          <p>-- Amazing icons courtesy of Vitaly and Flaticon 🤍 --</p>
+        </Link>
+      </div>
     </div>
   );
 };
