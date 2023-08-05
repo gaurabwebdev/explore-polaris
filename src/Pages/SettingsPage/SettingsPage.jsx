@@ -73,6 +73,54 @@ const SettingsPage = () => {
         <div className="flex items-center text-sm p-5">
           <ColorTable />
         </div>
+        <div className="flex flex-col gap-5 px-2 md:px-6">
+          <div className="flex justify-between items-center ">
+            <p className="capitalize font-semibold text-xl">
+              header background
+            </p>
+            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-black">
+              <input
+                className="w-full h-full opacity-0"
+                type="color"
+                name="header-background"
+                id=""
+              />
+            </div>
+          </div>
+          <div className="flex justify-between items-center">
+            <p className="capitalize font-semibold text-xl">header text</p>
+            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-white">
+              <input
+                className="w-full h-full opacity-0"
+                type="color"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+          <div className="flex justify-between items-center">
+            <p className="capitalize font-semibold text-xl">zebra lines</p>
+            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-gray-400">
+              <input
+                className="w-full h-full opacity-0"
+                type="color"
+                name="header-text"
+                id=""
+              />
+            </div>
+          </div>
+          <div className="flex justify-between items-center">
+            <p className="capitalize font-semibold text-xl">focus</p>
+            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-cyan-600">
+              <input
+                className="w-full h-full opacity-0"
+                type="color"
+                name="header-focus"
+                id=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
