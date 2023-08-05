@@ -1,0 +1,7 @@
+.category-tab-container > .react-tabs__tab{
+    padding: 0.5rem 4rem !important;
+}
+
+.category-tab-container > .react-tabs__tab--selected::after{
+    content: none;
+}
