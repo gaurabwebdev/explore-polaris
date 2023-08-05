@@ -3,11 +3,12 @@ import PrimaryBtn from "../../Components/Shared/PrimaryBtn/PrimaryBtn";
 import IconsContainer from "../../Components/IconsContainer/IconsContainer";
 import LabelsSelector from "../../Components/LabelsSeletor/LabelsSelector";
 import ColorTable from "../../Components/ColorTable/ColorTable";
+import ChartContainer from "../../Components/ChartContainer/ChartContainer";
 
 const SettingsPage = () => {
   return (
     <div className="p-6 bg-gray-300">
-      <div>
+      <div className="p-3">
         <div className="flex justify-between items-center">
           <h2 className="text-3xl font-medium">Settings</h2>
           <PrimaryBtn>
@@ -30,95 +31,130 @@ const SettingsPage = () => {
           </PrimaryBtn>
         </div>
       </div>
-      <div className="mt-12 p-6 border border-gray-900 rounded bg-white flex flex-col gap-8">
-        <IconsContainer />
-      </div>
-      <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
-        <LabelsSelector />
-      </div>
-      <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
-        <h4 className="font-medium text-base uppercase">font style</h4>
-        <p className="text-xl">
-          Select the font style that you wish to have in your size charts. You
-          can use our default font (Montserrat) or the same font as in your
-          Shopify theme.
-        </p>
-        <div className="flex items-center gap-6 text-xl">
-          <div className="flex items-center gap-3">
-            <input type="radio" name="style-selector" id="" />
-            <label htmlFor="style-selector">SmartSize Style</label>
-            <input type="radio" name="style-selector" id="" />
-            <label htmlFor="style-selector">Theme Style</label>
+      <div className="h-[80vh] overflow-y-scroll">
+        <div className="mt-12 p-6 border border-gray-900 rounded bg-white flex flex-col gap-8">
+          <IconsContainer />
+        </div>
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <LabelsSelector />
+        </div>
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <h4 className="font-medium text-base uppercase">font style</h4>
+          <p className="text-xl">
+            Select the font style that you wish to have in your size charts. You
+            can use our default font (Montserrat) or the same font as in your
+            Shopify theme.
+          </p>
+          <div className="flex items-center gap-6 text-xl">
+            <div className="flex items-center gap-3">
+              <input type="radio" name="style-selector" id="" />
+              <label htmlFor="style-selector">SmartSize Style</label>
+              <input type="radio" name="style-selector" id="" />
+              <label htmlFor="style-selector">Theme Style</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
-        <h4 className="font-medium text-base uppercase">
-          SIZE BUTTON PLACEMENT
-        </h4>
-        <div className="flex items-center gap-6 text-xl">
-          <div className="flex items-center gap-3">
-            <input type="radio" name="button-selector" id="" />
-            <label htmlFor="button-selector">Floating Button</label>
-            <input type="radio" name="button-selector" id="" />
-            <label htmlFor="button-selector">Inline Button</label>
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <h4 className="font-medium text-base uppercase">
+            SIZE BUTTON PLACEMENT
+          </h4>
+          <div className="flex items-center gap-6 text-xl">
+            <div className="flex items-center gap-3">
+              <input type="radio" name="button-selector" id="" />
+              <label htmlFor="button-selector">Floating Button</label>
+              <input type="radio" name="button-selector" id="" />
+              <label htmlFor="button-selector">Inline Button</label>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
-        <h4 className="font-medium text-base uppercase">colors</h4>
-        <p className="text-xl">
-          Choose the colors for your size chart to match your store.
-        </p>
-        <div className="flex items-center text-sm p-5">
-          <ColorTable />
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <h4 className="font-medium text-base uppercase">colors</h4>
+          <p className="text-xl">
+            Choose the colors for your size chart to match your store.
+          </p>
+          <div className="flex items-center text-sm p-5">
+            <ColorTable />
+          </div>
+          <div className="flex flex-col gap-5 px-2 md:px-6">
+            <div className="flex justify-between items-center ">
+              <p className="capitalize font-semibold text-xl">
+                header background
+              </p>
+              <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-black">
+                <input
+                  className="w-full h-full opacity-0"
+                  type="color"
+                  name="header-background"
+                  id=""
+                />
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <p className="capitalize font-semibold text-xl">header text</p>
+              <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-white">
+                <input
+                  className="w-full h-full opacity-0"
+                  type="color"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <p className="capitalize font-semibold text-xl">zebra lines</p>
+              <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-gray-400">
+                <input
+                  className="w-full h-full opacity-0"
+                  type="color"
+                  name="header-text"
+                  id=""
+                />
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <p className="capitalize font-semibold text-xl">focus</p>
+              <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-cyan-600">
+                <input
+                  className="w-full h-full opacity-0"
+                  type="color"
+                  name="header-focus"
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-5 px-2 md:px-6">
-          <div className="flex justify-between items-center ">
-            <p className="capitalize font-semibold text-xl">
-              header background
-            </p>
-            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-black">
-              <input
-                className="w-full h-full opacity-0"
-                type="color"
-                name="header-background"
-                id=""
-              />
-            </div>
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <ChartContainer />
+        </div>
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <h4 className="font-medium text-base uppercase">vertical position</h4>
+          <p className="text-xl">
+            Available for themes using Online Store 2.0 with Add Block option.
+          </p>
+          <div className="text-xl text-center p-6 border border-gray-700 rounded flex flex-col items-center justify-between gap-10">
+            <img
+              className="w-24 md:w-40 md:h-60"
+              src="https://client.smartsize.io/alignment_horizontal.png"
+              alt="vertical-structure-pic"
+            />
+            <PrimaryBtn>change vertical position</PrimaryBtn>
           </div>
-          <div className="flex justify-between items-center">
-            <p className="capitalize font-semibold text-xl">header text</p>
-            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-white">
-              <input
-                className="w-full h-full opacity-0"
-                type="color"
-                name=""
-                id=""
-              />
-            </div>
-          </div>
-          <div className="flex justify-between items-center">
-            <p className="capitalize font-semibold text-xl">zebra lines</p>
-            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-gray-400">
-              <input
-                className="w-full h-full opacity-0"
-                type="color"
-                name="header-text"
-                id=""
-              />
-            </div>
-          </div>
-          <div className="flex justify-between items-center">
-            <p className="capitalize font-semibold text-xl">focus</p>
-            <div className="h-8 w-8 md:h-16 md:w-16 rounded-full border cursor-text border-black bg-cyan-600">
-              <input
-                className="w-full h-full opacity-0"
-                type="color"
-                name="header-focus"
-                id=""
-              />
-            </div>
+        </div>
+        <div className="mt-12 bg-white p-6 border border-gray-900 rounded  flex flex-col gap-8">
+          <h4 className="font-medium text-base uppercase">
+            horizontal position
+          </h4>
+          <p className="text-xl">
+            Available for themes using Online Store 2.0 with Add Block option.
+          </p>
+          <div className="text-xl text-center p-6 border border-gray-700 rounded flex flex-col items-center justify-between gap-10">
+            <img
+              className="w-24 md:w-40 md:h-60"
+              src="https://client.smartsize.io/alignment_horizontal.png"
+              alt="vertical-structure-pic"
+            />
+            <PrimaryBtn>change horizontal position</PrimaryBtn>
           </div>
         </div>
       </div>
