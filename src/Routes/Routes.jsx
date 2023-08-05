@@ -5,6 +5,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import StartPage from "../Pages/StartPage/StartPage";
 import NewChartPage from "../Pages/NewChartPage/NewChartPage";
 import SettingsPage from "../Pages/SettingsPage/SettingsPage";
+import PlanPage from "../Pages/PlanPage/PlanPage";
 
 const Routes = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const Routes = createBrowserRouter([
       {
         path: "/settings",
         element: <SettingsPage />,
+      },
+      {
+        path: "/plans",
+        element: <PlanPage />,
       },
     ],
   },
