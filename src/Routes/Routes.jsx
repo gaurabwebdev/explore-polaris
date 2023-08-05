@@ -6,6 +6,7 @@ import StartPage from "../Pages/StartPage/StartPage";
 import NewChartPage from "../Pages/NewChartPage/NewChartPage";
 import SettingsPage from "../Pages/SettingsPage/SettingsPage";
 import PlanPage from "../Pages/PlanPage/PlanPage";
+import HelpPage from "../Pages/HelpPage/HelpPage";
 
 const Routes = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const Routes = createBrowserRouter([
       {
         path: "/plans",
         element: <PlanPage />,
+      },
+      {
+        path: "/help",
+        element: <HelpPage />,
       },
     ],
   },

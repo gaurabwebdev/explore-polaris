@@ -23,7 +23,7 @@ const PlanPage = () => {
               </div>
               <div className="px-3 py-6 pb-6 flex flex-col justify-center items-center gap-4">
                 <PrimaryBtn>Select</PrimaryBtn>
-                <ul className="text-xl flex flex-col gap-5 items-center mb-6">
+                <ul className="text-xl flex flex-col gap-5 items-center mb-6 capitalize">
                   <li>2 published size charts</li>
                   <li>no watermark</li>
                   <li>automatic conversion cm / in</li>
